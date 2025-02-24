@@ -1,0 +1,7 @@
+{% macro question(ask) %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/question.css') }}">
+<div id="macro_question">
+    <input type="radio" id="alternative" name="name">
+    <p>{{ ask }}</p>
+</div>
+{% endmacro %}

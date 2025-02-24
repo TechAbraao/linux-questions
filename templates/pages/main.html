@@ -1,15 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="1">
     <title>Linux Questions</title>
 </head>
 <body>
-    {% import "macros/button.html" as button %}
-    <main>
-         {{ button.button("Descrição") }}
-    </main>
+{% import "macros/button.html" as button %}
+{% import "macros/question.html" as question %}
+<main>
+    <div id="main_logo_linux_questions">
+        <h1>Linux</h1>
+        <h1>Questions</h1>
+    </div>
+    <div id="main_alternatives">
+            {{ question.question("Pergunta rs") }}
+    </div>
+    <div id="main_alternatives_button">
+        {{ button.button("Confirmar") }}
+    </div>
+</main>
 </body>
 </html>

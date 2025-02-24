@@ -1,0 +1,14 @@
+#macro_question {
+    display: flex;
+    width: 600px;
+    height: 70px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#macro_question > p {
+    height: 60px;
+    width: 85%;
+    background-color: #2C2C2C;
+    border-radius: 15px;
+    text-align: center;
+}
