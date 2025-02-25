@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="refresh" content="1">
+    <!-- <meta http-equiv="refresh" content="1"> -->
     <title>Linux Questions</title>
+    <script>
+        function verification(id) {
+            const button = document.getElementById("#{id}")
+            console.log("Hello, World!")
+        }
+    </script>
 </head>
 <body>
 {% import "macros/button.html" as button %}
@@ -15,10 +21,15 @@
         <h1>Linux</h1>
         <h1>Questions</h1>
     </div>
-    <div id="main_alternatives">
-            {{ question.question("Pergunta rs") }}
-    </div>
-    <div id="main_alternatives_button">
+    {% for ask in data["questions"] %}
+        <ul id="main_alternatives">
+            <p>{{ ask["question"] }}</p>
+            {% for alternative in ask["alternatives"] %}
+                <li>{{ question.question(alternative) }}</li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+    <div id="main_alternatives_button" onclick="verification('main_alternatives_button')">
         {{ button.button("Confirmar") }}
     </div>
 </main>

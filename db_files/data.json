@@ -1,0 +1,48 @@
+{
+  "questions": [
+    {
+      "question": "O que é o Linux?",
+      "alternatives": [
+        "Um sistema operacional proprietário desenvolvido pela Microsoft.",
+        "Um sistema operacional de código aberto baseado no núcleo Linux.",
+        "Um tipo de software antivírus.",
+        "Um navegador de internet."
+      ],
+      "correct_answer": "Um sistema operacional de código aberto baseado no núcleo Linux."
+    },
+    {
+      "question": "Quais são as principais distribuições do Linux?",
+      "alternatives": [
+        "Ubuntu, Fedora, Debian, CentOS, Arch Linux.",
+        "Windows, MacOS, Linux Mint, Android.",
+        "Red Hat, Solaris, MacOS, FreeBSD.",
+        "Chrome OS, Windows Server, Ubuntu, Fedora."
+      ],
+      "correct_answer": "Ubuntu, Fedora, Debian, CentOS, Arch Linux."
+    },
+    {
+      "question": "O que é o terminal no Linux?",
+      "alternatives": [
+        "Uma interface gráfica para navegar na internet.",
+        "Uma ferramenta de edição de texto visual.",
+        "Uma interface de linha de comando para interagir com o sistema.",
+        "Um jogo incluído no sistema operacional."
+      ],
+      "correct_answer": "Uma interface de linha de comando para interagir com o sistema."
+    },
+    {
+      "question": "Qual é a diferença entre o Linux e o Windows?",
+      "alternatives": [
+        "O Linux é de código aberto, e o Windows é proprietário.",
+        "O Linux é usado apenas em dispositivos móveis, e o Windows em desktops.",
+        "O Linux tem uma interface gráfica, e o Windows não.",
+        "O Linux é um programa de antivírus, e o Windows é um sistema operacional."
+      ],
+      "correct_answer": "O Linux é de código aberto, e o Windows é proprietário."
+    }
+  ]
+}
+
+
+
+
